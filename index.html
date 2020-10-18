@@ -24,7 +24,24 @@
         <br>
         <h3 style="text-align: center;color: #222;">Crypto Convo</h3>
         <div class="card-body mt-1 mb-3">
-           
+            <select class="form-control form-control-lg" id="crypto" required>
+                <option value="" selected="true" disabled="disabled" >Select Cryptocurrency</option>
+                <option value="BTC">Bitcoin</option>
+                <option value="LTC">Litecoin</option>
+                <option value="BCH">Bitcoin cash</option>
+                <option value="ETH">Ethereum</option>
+              </select>
+              <br>
+              <div style='text-align:center; '> <i class='fas fa-angle-double-down' style='text-align:center; font-size:48px;color:#222'></i></div>
+           <br>
+              <select class="form-control form-control-lg" id="fiat" required>
+                <option value="" selected="true" disabled="disabled" >Select Fiat</option>
+                <option value="USD">U.S Dollar</option>
+                <option value="JPY">Japanese Yen</option>
+                <option value="INR">Indian Rupees</option>
+                <option value="EUR">Euro</option>
+              </select>
+              <br>  
      
   
         </div>
