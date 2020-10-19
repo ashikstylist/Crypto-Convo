@@ -60,16 +60,23 @@
          $(document).ready( function() {
          var crypto = document.getElementById('crypto').value;
          var fiat = document.getElementById('fiat').value;
-  
-  var display = $("#output")
+         if(crypto == "" || fiat == ""){
+         
+         alert("Select Details Correctly");
+         
+    }
+    else{
+        var display = $("#output")
             $.getJSON("https://min-api.cryptocompare.com/data/price?fsym="+crypto+"&tsyms="+fiat+" " ,function(result){
               display.empty();
               display.append("<h4 style='text-align:center'>1 "+crypto+"= <b>"+result[fiat]+"</b> "+fiat+"</h4>");
         
               }); 
   
-        
+    }
         });
+
+  
         
         }
         </script>
